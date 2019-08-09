@@ -96,4 +96,16 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+
+    //Dilan
+
+    <string name="msg" translatable="false">How are we doing? </string>
+    <string name="about">We are always working to improve the  TRAVELLY experiance,so we\'d love to hear what\'s working and how we can do better.</string>
+    <string name="next1">What would you like to do?</string>
+    <string name="r1">Request</string>
+    <string name="r2">Report</string>
+    <string name="r3">Review</string>
+
+
 </resources>
