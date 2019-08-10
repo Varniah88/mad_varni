@@ -19,7 +19,7 @@ public class Login_Form extends AppCompatActivity {
         Button button = findViewById(R.id.btn_profile);
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), profile.class));
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
 
@@ -27,6 +27,13 @@ public class Login_Form extends AppCompatActivity {
         button2.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Signup_Form.class));
+            }
+        });
+
+        Button button3 = findViewById(R.id.btn_admin);
+        button3.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), admin.class));
             }
         });
     }

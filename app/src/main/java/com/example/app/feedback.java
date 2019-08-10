@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+
+public class feedback extends AppCompatActivity {
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     return false;
                 case R.id.navigation_dashboard:
                     startActivity(new Intent(getApplicationContext(), Saved.class));
@@ -39,51 +39,32 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_feedback);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        Button bt11 =findViewById(R.id.bt11);
-        bt11.setOnClickListener(new View.OnClickListener() {
-            @Override
+        Button buttonOne = findViewById(R.id.button2);
+        buttonOne.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Stays.class));
+                Intent activity2Intent = new Intent(getApplicationContext(), Report.class);
+                startActivity(activity2Intent);
             }
         });
-
-        Button bt2 =findViewById(R.id.bt2);
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
+        Button button2 = findViewById(R.id.but);
+        button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Adventure.class));
+                Intent activityIntent = new Intent(getApplicationContext(), Request.class);
+                startActivity(activityIntent);
             }
         });
-
-        Button bt33 =findViewById(R.id.bt33);
-        bt33.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Restaurants.class));
-            }
-        });
-
-        ImageButton ib3 =findViewById(R.id.ib3);
-        ib3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Favouritesaved.class));
-            }
-        });
-
-        ImageButton ib =findViewById(R.id.ib);
-        ib.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Favouritesaved.class));
-            }
-        });
-
     }
+
+
+
+
+
+
+
 
 }

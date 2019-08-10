@@ -8,28 +8,26 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class Signup_Form extends AppCompatActivity {
 
     EditText txt_fullName, txt_username, txt_email, txt_password;
     Button btn_register;
-    DatabaseReference databaseReference;
-    FirebaseAuth firebaseAuth;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup__form);
+
+        Button button = findViewById(R.id.btn_login);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Login_Form.class));
+            }
+        });
 
 
         //Casting Views
@@ -39,8 +37,7 @@ public class Signup_Form extends AppCompatActivity {
         txt_password = (EditText)findViewById(R.id.txt_password);
         btn_register = (Button) findViewById(R.id.btn_register);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("User");
-        firebaseAuth = FirebaseAuth.getInstance();
+
 
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,34 +62,6 @@ public class Signup_Form extends AppCompatActivity {
                 if(TextUtils.isEmpty(userName)){
                     Toast.makeText(Signup_Form.this, "Please Enter Username", Toast.LENGTH_SHORT).show();
                 }
-
-
-                firebaseAuth.createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(Signup_Form.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    user information = new user(
-                                            fullName,
-                                            userName,
-                                            email
-
-
-                                    );
-
-                                    FirebaseDatabase.getInstance().getReference("User")
-                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                            .setValue(information).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            Toast.makeText(Signup_Form.this, "Registration Complete", Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                        }
-                                    });
-                                } else {
-                                }
-                            }
-                        });
 
             }
         });

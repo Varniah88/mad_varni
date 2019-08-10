@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgraound"
-    tools:context=".MainActivity">
+    tools:context=".edit_profile">
 
     <ImageButton
         android:id="@+id/imageButton"
