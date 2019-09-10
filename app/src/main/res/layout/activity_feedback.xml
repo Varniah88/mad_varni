@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.028" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/add_restaurant_pick_place_on_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/add_restaurant_pick_place_on_map"
         tools:ignore="MissingConstraints,OnClick" />
 
     <Button
@@ -89,7 +89,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/but"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/add_restaurant_pick_place_on_map"
         app:layout_constraintVertical_bias="0.501"
         tools:ignore="MissingConstraints" />
 
