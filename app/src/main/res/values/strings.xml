@@ -65,7 +65,7 @@
     <string name="kkk" translatable="false">Hanthena, south-west of the city of Kandy</string>
     <string name="bn" translatable="false">save</string>
     <string name="bn2" translatable="false">save</string>
-    <string name="oooo" translatable="false">Arugambay, Eastern province of Srilanka</string>
+
     <string name="bn3" translatable="false">save</string>
     <string name="txt444" translatable="false">World End, Central province</string>
     <string name="txt6" translatable="false">Sigiriya, Central province  </string>
@@ -76,6 +76,15 @@
     <string name="title_activity_sdf">sdf</string>
     <string name="nnnn">Submit</string>
     <string name="ppp"></string>
+    <string name="radio2" translatable="false">Request</string>
+    <string name="fed1" translatable="false">Send Feedback</string>
+    <string name="radio6" translatable="false">Report</string>
+    <string name="rad" translatable="false"></string>
+    <string name="sub400" translatable="false"></string>
+    <string name="button_choose_image1" translatable="false">Choose File</string>
+    <string name="button_upload1" translatable="false">Upload</string>
+
+
 
 
     //Cletwin

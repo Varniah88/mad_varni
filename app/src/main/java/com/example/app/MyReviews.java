@@ -38,7 +38,7 @@ public class MyReviews extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_reviews);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
+        mTextMessage = findViewById(R.id.message111);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 }

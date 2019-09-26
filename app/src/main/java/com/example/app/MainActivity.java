@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
+        mTextMessage = findViewById(R.id.message111);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         Button bt11 =findViewById(R.id.bt11);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         bt33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Restaurants.class));
+                startActivity(new Intent(MainActivity.this, restAct.class));
             }
         });
 

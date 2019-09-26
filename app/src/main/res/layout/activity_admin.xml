@@ -21,7 +21,7 @@
         android:textColor="#1E8173"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/img_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,12 +35,12 @@
         android:background="@drawable/button_rounded"
         android:text="@string/admin_dashboard_add_to_explorer"
         android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/img_view"
+        app:layout_constraintStart_toStartOf="@+id/img_view"
+        app:layout_constraintTop_toBottomOf="@+id/img_view" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_view"
         android:layout_width="111dp"
         android:layout_height="82dp"
         android:layout_marginTop="116dp"

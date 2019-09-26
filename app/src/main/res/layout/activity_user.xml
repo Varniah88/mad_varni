@@ -8,7 +8,7 @@
     tools:context=".profile">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_view"
         android:layout_width="120dp"
         android:layout_height="133dp"
         android:layout_marginStart="24dp"
@@ -31,7 +31,7 @@
         android:text="Eliyas Cletwin"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/img_view" />
 
     <TextView
         android:id="@+id/profile_email"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.029"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/img_view" />
 
     <TextView
         android:id="@+id/textView6"
@@ -97,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toEndOf="@+id/profile_phone"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/img_view" />
 
     <ImageButton
         android:id="@+id/btn_edit"
@@ -106,7 +106,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/img_view"
         app:layout_constraintTop_toBottomOf="@+id/profile_name"
         app:srcCompat="@android:drawable/ic_menu_manage" />
 

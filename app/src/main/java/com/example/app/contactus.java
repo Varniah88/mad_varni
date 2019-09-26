@@ -37,7 +37,7 @@ public class contactus extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
+        mTextMessage = findViewById(R.id.message111);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
 

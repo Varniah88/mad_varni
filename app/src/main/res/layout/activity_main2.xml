@@ -67,14 +67,14 @@
         android:text="@string/r1"
         android:onClick="btn_request"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/fed1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_restaurant_pick_place_on_map"
         tools:ignore="MissingConstraints,OnClick" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/fed1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="216dp"

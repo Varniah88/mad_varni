@@ -14,9 +14,9 @@
         android:background="@drawable/button_rounded"
         android:text="@string/explore_panel_add_stays"
         android:textColor="#fff"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/img_view"
+        app:layout_constraintStart_toStartOf="@+id/img_view"
+        app:layout_constraintTop_toBottomOf="@+id/img_view" />
 
     <Button
         android:id="@+id/btn_adventure"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_view"
         android:layout_width="121dp"
         android:layout_height="83dp"
         android:layout_marginTop="40dp"

@@ -15,13 +15,13 @@
         android:ems="10"
         android:hint="enter your name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintBottom_toTopOf="@+id/Email111"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/palace" />
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/Email111"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
         app:layout_constraintBottom_toTopOf="@+id/Message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        app:layout_constraintTop_toBottomOf="@+id/Email111" />
 
     <EditText
         android:id="@+id/Message"

@@ -41,16 +41,16 @@ public class feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
+        mTextMessage = findViewById(R.id.message111);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        Button buttonOne = findViewById(R.id.button2);
-        buttonOne.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent activity2Intent = new Intent(getApplicationContext(), Report.class);
-                startActivity(activity2Intent);
-            }
-        });
+//        Button buttonOne = findViewById(R.id.button2);
+//        buttonOne.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Intent activity2Intent = new Intent(getApplicationContext(), Report.class);
+//                startActivity(activity2Intent);
+//            }
+//        });
         Button button2 = findViewById(R.id.but);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
